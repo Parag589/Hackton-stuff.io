@@ -99,3 +99,230 @@
     transition: 1s;
     transition-delay:0.75s;
 }
+
+/* 
+
+form */
+
+
+.inputbox{
+    position: relative;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    
+}
+
+.inputbox input{
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+.inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1.25em;
+    color: rgba(255,255,255,0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span{
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background:#1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+}
+
+.inputbox:nth-child(2) input:valid ~ span,
+.inputbox:nth-child(2) input:focus ~ span{
+    background: #00dfc4;
+    color: #1d2b3a;
+    border-radius: 2px;
+}
+
+.inputbox input:valid,
+.inputbox input:focus{
+    border:1px solid #00dfc5c8;
+}
+
+.submitbuttondiv{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    font-size: 18px;
+    background-color: #00dfc5c8;
+    border-radius: 5px;
+}
+
+.buttonindex{
+    background-color: #00dfc5c8;
+    margin-top: 40px;
+    border-radius: 5px;
+    height: 40px;
+    width: 180px;
+    border: none;
+    letter-spacing: 0.2em;
+}
+
+.submitbuttondiv:hover,
+.buttonindex:hover{
+    background-color: #00dfc4;
+}
+
+.formdiv{margin-top: 18%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+body:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to right, #f00,#f00,#0f0,#0ff,#ff0,#0ff);
+    mix-blend-mode: color;
+    pointer-events: none;
+}
+
+.details-text{
+    margin-top: -100px;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #ddd;
+    font-size: 30PX;
+    font-family: sans-serif;
+    letter-spacing: 0em;
+    
+}
+
+p span{
+    opacity: 0;
+    display: inline-block;
+    animation: animate 1s linear forwards;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform:rotateY(90deg) ;
+        filter: blur(10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform:rotateY(0deg) ;
+        filter: blur(0px);
+    }
+}
+
+p span:nth-child(1){
+    animation-delay:1s;
+}
+
+p span:nth-child(2){
+    animation-delay:2s;
+}
+
+p span:nth-child(3){
+    animation-delay:2.5s;
+}
+
+p span:nth-child(4){
+    animation-delay:2.75s;
+}
+
+p span:nth-child(5){
+    animation-delay:3s;
+}
+p span:nth-child(6){
+    animation-delay:3.25s;
+}
+
+p span:nth-child(7){
+    animation-delay:3.35s;
+}
+
+p span:nth-child(8){
+    animation-delay:3.35s;
+}
+
+p span:nth-child(9){
+    animation-delay:3.45s;
+}
+
+p span:nth-child(10){
+    animation-delay:3.50s;
+}
+
+p span:nth-child(11){
+    animation-delay:3.60s;
+}
+p span:nth-child(12){
+    animation-delay:3.65s;
+}
+
+p span:nth-child(13){
+    animation-delay:3.70s;
+}
+
+p span:nth-child(14){
+    animation-delay:3.80s;
+}
+
+p span:nth-child(15){
+    animation-delay:3.90s;
+}
+
+p span:nth-child(16){
+    animation-delay:4s;
+}
+p span:nth-child(17){
+    animation-delay:4.10s;
+}
+
+p span:nth-child(18){
+    animation-delay:4s;
+}
